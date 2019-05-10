@@ -107,6 +107,7 @@
                 app:titleTextSize="20sp"
                 app:topTextSpace="50dp" />
 
+
             <com.example.customdemo.view.ColumnView
                 android:id="@+id/columnView"
                 android:layout_width="350dp"
