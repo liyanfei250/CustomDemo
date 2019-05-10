@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--引导页，轮播图-->
+    <com.example.customdemo.view.HomeBanner
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.customdemo.view.HomeBanner>
+
+    <com.example.customdemo.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--版本升级-->
+            <TextView
+                android:id="@+id/tv_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="版本升级"
+                android:textColor="@color/black" />
+
+            <!--确定按钮-->
+            <com.example.customdemo.view.RoundButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="不同的按钮"
+                app:btnCornerRadius="3dp"
+                app:btnSolidColor="@color/buy_color"
+                app:btnStrokeColor="@color/black" />
+
+            <!--验证码倒计时-->
+            <com.example.customdemo.view.RoundButton
+                android:id="@+id/tv_countdowm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="发送校验码"
+                app:btnCornerRadius="10dp"
+                app:btnDisableSolidColor="@color/pagerIndicate_color"
+                app:btnPressedSolidColor="@color/new_bg_color"
+                app:btnSolidColor="@color/new_bg_color"
+                app:textNormalColor="@color/white" />
+
+            <!--带清除的输入框-->
+            <com.example.customdemo.view.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="带清除的输入框"
+                android:padding="20dp" />
+
+            <!--密码的输入-->
+
+            <com.example.customdemo.view.PasswordEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints="码的输入" />
+
+            <!--输入框针对身份证号和手机号的格式验证-->
+            <com.example.customdemo.view.ClearEditText
+                android:id="@+id/card_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入格式为手机号码格式"
+                android:padding="20dp" />
+
+            <com.example.customdemo.view.ClearEditText
+                android:id="@+id/bank_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入格式为银行卡格式，长度可以控制"
+                android:padding="20dp" />
+
+            <!--柱状图实例-->
+            <com.example.customdemo.view.LBarChartView
+                android:id="@+id/frameNewBase"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                app:barShowNumber="6"
+                app:borderColor="@color/colorAccent"
+                app:bottomTextSpace="20dp"
+                app:dataTextColor="@color/colorAccent"
+                app:dataTextSize="12sp"
+                app:descriptionTextColor="@color/colorAccent"
+                app:descriptionTextSize="20sp"
+                app:isClickAnimation="true"
+                app:labelTextColor="@color/colorAccent"
+                app:labelTextSize="10sp"
+                app:leftTextSpace="30dp"
+                app:title="柱状图实例"
+                app:titleTextColor="@color/colorAccent"
+                app:titleTextSize="20sp"
+                app:topTextSpace="50dp" />
+
+            <com.example.customdemo.view.ColumnView
+                android:id="@+id/columnView"
+                android:layout_width="350dp"
+                android:layout_height="300dp" />
+
+            <com.example.customdemo.view.PieChartView
+                android:id="@+id/pieView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:backColor="#ffd9d9d9"
+                app:circleStrokeWidth='2dp' />
+
+            <com.example.customdemo.view.RadarChartView
+                android:id="@+id/radarView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:classNumber="3"
+                app:dataBackColor="@color/buy_color"
+                app:itemTextColor="@color/colorAccent"
+                app:itemTextSize="16dp"
+                app:polygonNumber="8" />
+
+            <com.example.customdemo.view.LineChartView
+                android:id="@+id/lineView"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                app:labelTextSize="10dp"
+                app:title="折线图示例1"
+                app:titleTextSize="20dp" />
+
+        </LinearLayout>
+    </com.example.customdemo.view.MyScrollview>
+</LinearLayout>

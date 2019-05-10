@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="新版本"
+            android:textColor="@color/main_color"
+             />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="xxxx"
+            android:textColor="@color/main_color"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/text"
+         />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@color/black"
+        android:text="立即更新"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_nextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/black"
+        android:text="下次再说"
+        android:textColor="@color/main_color"
+        />
+</LinearLayout>

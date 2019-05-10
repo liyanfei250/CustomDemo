@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerIndicator">
+        <attr name="roundSolidColor" format="color" />
+        <attr name="roundHollowColor" format="color" />
+        <attr name="roundRadius" format="dimension" />
+        <attr name="paintHollow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundButton">
+        <!-- 背景色 -->
+        <attr name="btnSolidColor" format="color" />
+        <!-- 按下背景色 -->
+        <attr name="btnPressedSolidColor" format="color" />
+        <!-- 禁用背景色 -->
+        <attr name="btnDisableSolidColor" format="color" />
+
+        <!-- 边框色 -->
+        <attr name="btnStrokeColor" format="color" />
+        <!-- 边框按下色 -->
+        <attr name="btnPressedStrokeColor" format="color" />
+        <!-- 边框禁用色 -->
+        <attr name="btnDisableStrokeColor" format="color" />
+
+        <!-- 字体颜色 -->
+        <attr name="textNormalColor" format="color" />
+        <!-- 字体颜按下色 -->
+        <attr name="textPressedColor" format="color" />
+        <!-- 字体颜禁用色 -->
+        <attr name="textDisableColor" format="color" />
+
+        <!-- 边框厚度 -->
+        <attr name="btnStrokeWidth" format="dimension" />
+        <!-- 边框虚线长度 -->
+        <attr name="btnStrokeDashWidth" format="dimension" />
+        <!-- 边框虚线间隙 -->
+        <attr name="btnStrokeDashGap" format="dimension" />
+        <!-- 圆角半径，stadium 表示半径为 min(height,width) / 2-->
+        <attr name="btnCornerRadius" format="dimension">
+            <enum name="stadium" value="-1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="passwordedit">
+        <attr name="hintedit" format="string" />
+        <attr name="hideedit" format="boolean" />
+        <attr name="leftdrawableicon" format="reference" />
+        <attr name="rightdrawable" format="reference" />
+        <attr name="maxLengthedit" format="integer" />
+        <attr name="inputTypeedit">
+            <flag name="text" value="1" />
+            <flag name="number" value="2" />
+        </attr>
+        <attr name="defalutText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="radarCharts">
+        <attr name="itemTextColor" format="color" />
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="dataBackColor" format="color" />
+        <attr name="polygonNumber" format="integer" />
+        <attr name="classNumber" format="integer" />
+        <attr name="showNumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="barCharts">
+        <attr name="borderColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="title" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextColor" format="color" />
+
+        <attr name="descriptionTextSize" format="dimension" />
+        <attr name="descriptionTextColor" format="color" />
+
+        <attr name="dataTextSize" format="dimension" />
+        <attr name="dataTextColor" format="color" />
+
+        <attr name="leftTextSpace" format="dimension" />
+        <attr name="topTextSpace" format="dimension" />
+        <attr name="bottomTextSpace" format="dimension" />
+        <attr name="barShowNumber" format="integer" />
+        <attr name="isClickAnimation" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="pieCharts">
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="pieLineColor" format="color" />
+        <attr name="backColor" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ff736c</color>
+    <color name="black">#000000</color>
+    <!--主色调：骚红色-->
+    <color name="main_color">#ff8577</color>
+
+    <color name="white">#ffffff</color>
+    <color name="oval_color">#4db5b5b5</color>
+    <color name="oval_e1">#e1e1e1</color>
+
+    <color name="text_candle">#999999</color>
+    <!--toolbar背景色-->
+    <color name="toolbar_bg">#ffffff</color>
+    <!--layout背景色-->
+    <color name="layout_bg">#f9f9f9</color>
+    <!--价格上涨颜色-->
+    <color name="price_up">#e45b5b</color>
+    <color name="open_price_line">#ff736c</color>
+    <color name="all_text">#ffa298</color>
+    <color name="market_up_bg">#ffe6e6</color>
+    <color name="market_down_bg">#e8ffdf</color>
+    <!--价格下跌颜色-->
+    <color name="price_down">#5cbb59</color>
+
+    <color name="sell_color">#30b840</color>
+    <color name="buy_color">#f1503c</color>
+    <color name="new_register_color">#f35b43</color>
+    <color name="line_color">#ebebeb</color>
+    <color name="pagerIndicate_color">#d4d4d4</color>
+    <!--首页底部菜单栏按钮默认颜色-->
+    <color name="tab_bottom_unpress">#aaaaaa</color>
+    <!--首页底部菜单栏按钮按下颜色-->
+    <color name="tab_bottom_ispress">#ff8577</color>
+    <color name="tab_bottom_pressed">#e9312b</color>
+    <color name="tab_bottom_bg">#18191a</color>
+    <!--线条颜色-->
+    <color name="line">#E8E8E8</color>
+    <color name="bg">#f4f4f4</color>
+    <color name="text">#666666</color>
+    <color name="text_tab">#999999</color>
+    <color name="text_33">#333333</color>
+    <color name="text_37">#373737</color>
+    <color name="text_44">#444444</color>
+    <color name="text_c8">#c8c8c8</color>
+    <color name="text_9e">#9e9e9e</color>
+    <color name="text_f2">#f2513c</color>
+    <color name="text_9b">#9b9b9b</color>
+    <color name="text_55">#555555</color>
+    <color name="load_more">#ff8f83</color>
+    <color name="line_divier">#eeeeee</color>
+    <color name="item_divier">#e7e7e7</color>
+    <color name="text_gray">#838383</color>
+    <color name="guide_color">#ffe882</color>
+    <color name="stopprice_bg">#f9f9f9</color>
+    <color name="register_bg">#474D54</color>
+    <color name="register_faster_text">#f66547</color>
+
+    <color name="cardview_stroke">#33aaaaaa</color>
+    <color name="home_quotation_title">#333333</color>
+    <color name="home_quotation_value">#34ab62</color>
+    <color name="my_coupon">#c3c3c3</color>
+    <color name="countdown_text">#b2b8be</color>
+    <color name="my_number">#ff8173</color>
+    <color name="number">#ff8577</color>
+    <color name="progressbar_backgroundcolor">#f3f3f3</color>
+    <color name="spinner_text_selected">#333333</color>
+    <color name="spinner_text_normal">#999999</color>
+    <color name="market_title_text">#666666</color>
+    <color name="text_register">#ffdda1</color>
+    <color name="bg_item_mark">#fffcf4</color>
+    <color name="price_up_bg">#ffe6e6</color>
+    <color name="price_down_bg">#e8ffdf</color>
+    <color name="bg_identification">#fef6dc</color>
+    <color name="bg_open_account">#b300060e</color>
+    <color name="font_identification">#b5b5b5</color>
+    <color name="identification_text_color">#f66245</color>
+    <color name="identification_solid_color">#F6EAE5</color>
+    <color name="hint_color">#b3b3b3</color>
+    <color name="remind_color">#ff0c00</color>
+    <color name="disable_color">#80ffc98f</color>
+    <color name="disable_btn_color">#d5d5d5</color>
+    <color name="press_color">#ffc98f</color>
+    <color name="help_color">#57a8ff</color>
+    <color name="change_color">#7cabfd</color>
+    <color name="send_text_color">#c2b18d</color>
+    <color name="send_bg_color">#fef6dc</color>
+    <color name="new_bg_color">#ffc33e</color>
+    <color name="withdraw_color">#ff2b22</color>
+
+    <color name="take_color">#fff2d0</color>
+    <color name="take_text_color">#e46263</color>
+    <color name="register_color">#ff8d8d</color>
+    <color name="dialog_color">#66010000</color>
+    <color name="text_bg_color">#f9ece9</color>
+    <color name="identification_bg_color">#F5F5F5</color>
+
+    <color name="send">#fef6dc</color>
+    <color name="light_white">#b3ffffff</color>
+    <color name="bg_resistance">#08000000</color>
+    <color name="text_index">#363636</color>
+    <color name="xsbbi_index">#7cabfd</color>
+    <color name="text_statement">#80363636</color>
+    <color name="index_item_bg">#fcfcfc</color>
+    <color name="text_disable">#cdcdcd</color>
+    <color name="nuteral">#7b7b7b</color>
+    <color name="resistance">#ff8577</color>
+    <color name="mark_cannot_trade_bg">#fffcf4</color>
+
+    <color name="tab_bg_color">#FAFAFA</color>
+    <color name="tab_text_color">@color/text_tab</color>
+    <color name="tab_text_selected_color">@color/main_color</color>
+    <color name="tab_underline_color">@color/main_color</color>
+    <color name="now_price">#7cabfd</color>
+    <color name="bg_trade_rule">#efb771</color>
+    <color name="text_trade_rule">#9c9c9c</color>
+
+    <color name="mainStart">#F45A41</color>
+    <color name="mainCenter">#FA754F</color>
+    <color name="mainEnd">#FE8658</color>
+    <color name="unlogin_trade_page_text_color">#555555</color>
+    <color name="unlogin_trade_page_text_color_red">#f2543e</color>
+
+
+</resources>
