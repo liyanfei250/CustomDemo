@@ -110,7 +110,7 @@
 
             <com.example.customdemo.view.ColumnView
                 android:id="@+id/columnView"
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="300dp" />
 
             <com.example.customdemo.view.PieChartView
@@ -138,6 +138,29 @@
                 app:title="折线图示例1"
                 app:titleTextSize="20dp" />
 
+            <com.example.customdemo.view.RadarChartViewTwo
+                android:id="@+id/radarViewTwo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <com.example.customdemo.view.BrokenLineChartView
+                android:id="@+id/brokenLineChartView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <com.example.customdemo.view.newLineChartView
+                android:id="@+id/newLineChartView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
         </LinearLayout>
     </com.example.customdemo.view.MyScrollview>
 </LinearLayout>

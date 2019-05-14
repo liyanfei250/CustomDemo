@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.example.customdemo.bean.BannerResult;
 import com.example.customdemo.dialog.UpdateVersionDialog;
 import com.example.customdemo.view.BankCardTextWatcher;
+import com.example.customdemo.view.BrokenLineChartView;
 import com.example.customdemo.view.ClearEditText;
 import com.example.customdemo.view.ColumnView;
 import com.example.customdemo.view.DragInerfaces;
@@ -19,9 +20,12 @@ import com.example.customdemo.view.LBarChartView;
 import com.example.customdemo.view.LineChartView;
 import com.example.customdemo.view.PieChartView;
 import com.example.customdemo.view.RadarChartView;
+import com.example.customdemo.view.RadarChartViewTwo;
 import com.example.customdemo.view.RoundButton;
+import com.example.customdemo.view.newLineChartView;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 import butterknife.BindView;
@@ -71,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         }
     };
     private ColumnView columnView;
+    private RadarChartViewTwo radarViewTwo;
+    private BrokenLineChartView lineChart;
+    private newLineChartView newlineChart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,12 +95,18 @@ public class MainActivity extends AppCompatActivity {
         lineChartView = (LineChartView) findViewById(R.id.lineView);
         LBarChartView = (LBarChartView) findViewById(R.id.frameNewBase);
         columnView = (ColumnView) findViewById(R.id.columnView);
+        radarViewTwo = (RadarChartViewTwo) findViewById(R.id.radarViewTwo);
+        lineChart = (BrokenLineChartView) findViewById(R.id.brokenLineChartView);
+        newlineChart = (newLineChartView) findViewById(R.id.newLineChartView);
 
         initPieDatas();
         initRadarDatas();
         initLineDatas();
         initNewBarDatas();
         initColumDatas();
+        initraterDatas();
+        initlineDatass();
+        initNewlineDatass();
 
 
         /*banar图*/
@@ -140,6 +153,37 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void initlineDatass() {
+        float[] values = new float[]{2, 6, 8, 1, 10};
+
+        lineChart.setValues(values);
+
+        String[] weeks = new String[]{"周一", "周二", "周三", "周四", "周五"};
+
+        lineChart.setWeeks(weeks);
+    }
+
+    private void initNewlineDatass() {
+        float[] values = new float[]{2, 6, 8, 1, 10, 100, 20, 30, 10};
+
+        newlineChart.setValues(values);
+
+        String[] weeks = new String[]{"周一", "周二", "周三", "周四", "周五", "周六", "周日", "周一","周二"};
+
+        newlineChart.setWeeks(weeks);
+    }
+
+    private void initraterDatas() {
+        LinkedHashMap valueHash = new LinkedHashMap<>();
+        valueHash.put("盈利能力", (float) 10);
+        valueHash.put("抗风险能力", (float) 20);
+        valueHash.put("稳定性", (float) 30);
+        valueHash.put("准确性", (float) 20);
+        valueHash.put("可复制性", (float) 50);
+        radarViewTwo.setData(valueHash);
+        radarViewTwo.setRatingData((int) 99);
+    }
+
     private void initColumDatas() {
         final List<Long> datas = new ArrayList<>();
         final List<String> description = new ArrayList<>();
@@ -148,11 +192,15 @@ public class MainActivity extends AppCompatActivity {
         datas.add((long) 30);
         datas.add((long) 100);
         datas.add((long) 110);
+        datas.add((long) 30);
+        datas.add((long) 100);
         description.add("one");
         description.add("two");
         description.add("three");
         description.add("three");
         description.add("three");
+        description.add("four");
+        description.add("five");
 
         columnView.updateThisData(datas, description);
     }

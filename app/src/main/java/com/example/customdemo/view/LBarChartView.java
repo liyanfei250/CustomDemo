@@ -13,6 +13,7 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
 import com.example.customdemo.R;
+import com.example.customdemo.utils.NumUtil;
 import com.example.customdemo.utils.Utils;
 
 import java.util.ArrayList;
@@ -36,6 +37,7 @@ public class LBarChartView extends FrameLayout {
     private int mTopTextSpace;
     protected Paint mBorderLinePaint;
     private Double maxData;
+    private int rows = 5;
 
     private List<Double> mDatas;
 
@@ -156,6 +158,38 @@ public class LBarChartView extends FrameLayout {
         for (int i = 0; i < 6; i++) {
             canvas.drawText(String.valueOf(numY * i), -mTextPaint.measureText(numY * i + "") - Utils.dp2px(getContext(), 2), 0 + i * num / 6 * -1, mTextPaint);
         }
+
+        /*Paint.FontMetrics fm = mTextPaint.getFontMetrics();
+        float th = fm.descent - fm.ascent;
+
+        float max = Float.MIN_VALUE;
+        float min = Float.MAX_VALUE;
+        for (int i = 0; i < mDatas.size(); i++) {
+            max = (float) Math.max(max, mDatas.get(i));
+            min = (float) Math.min(min, mDatas.get(i));
+        }
+        if (max - min < 1) {
+            max += max * 0.1f;
+            min -= max * 0.1f;
+        } else {
+            max += ((max - min) * 0.1f);
+            min -= ((max - min) * 0.1f);
+        }
+
+        float left = mTextPaint.measureText(NumUtil.format(max)) * 1.6f;
+        float right = dp2px(15);
+        float top = dp2px(10);
+        float bottom = getHeight() - th * 2;
+
+        float rowoff = (bottom - top) / rows;
+        mTextPaint.setTextAlign(Paint.Align.LEFT);
+        float valueoff = (max - min) / (float) rows;
+        for (int i = 0; i < rows; i++) {
+            float value = (max - i * valueoff);
+            float x = -mLeftTextSpace / 2 - mTextPaint.measureText(String.valueOf(Math.round(maxData * 1.05))) / 2;
+            float y = fitCenter(top + i * rowoff, fm);
+            canvas.drawText("$" + NumUtil.format(value), x, y, mTextPaint);
+        }*/
     }
 
 
@@ -174,8 +208,22 @@ public class LBarChartView extends FrameLayout {
         barChartView.addEndMoreData(mDatas, mDesciption);
     }
 
-//    public void addStartMoreData(List<Double> mDatas, List<String> mDesciption) {
+    //    public void addStartMoreData(List<Double> mDatas, List<String> mDesciption) {
 //        barChartView.addStartMoreData(mDatas,mDesciption);
 //    }
+    public float fitCenter(float y, Paint.FontMetrics fm) {
+        y = y - (fm.ascent + fm.descent) / 2f;
+        return y;
+    }
+
+    private int dp2px(int value) {
+        float v = getResources().getDisplayMetrics().density;
+        return (int) (v * value + 0.5f);
+    }
+
+    private int sp2px(int value) {
+        float v = getResources().getDisplayMetrics().scaledDensity;
+        return (int) (v * value + 0.5f);
+    }
 
 }
